@@ -10,6 +10,5 @@ namespace Exam1
 
         public string MemberName { get; set; }
 
-        public string VipMemberCardNumber { get; set; }
     }
 }

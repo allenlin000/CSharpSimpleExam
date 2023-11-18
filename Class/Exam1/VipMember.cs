@@ -6,6 +6,6 @@ namespace Exam1
 {
     public class VipMember : Member
     {
-
+        public string VipMemberCardNumber { get; set; }
     }
 }
