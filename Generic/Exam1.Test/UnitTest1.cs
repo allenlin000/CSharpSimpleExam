@@ -9,7 +9,7 @@ namespace Exam1.Tests
         [Fact()]
         public void IntegerCompareTest()
         {
-            var myCompare = new MyCompareTo();
+            var myCompare = new MyCompareTo<int>();
 
             var actual = myCompare.Compare(1, 1);
 
@@ -19,7 +19,7 @@ namespace Exam1.Tests
         [Fact()]
         public void DoubleCompareTest()
         {
-            var myCompare = new MyCompareTo();
+            var myCompare = new MyCompareTo<double>();
 
             var actual = myCompare.Compare(1.01, 1.01);
 
@@ -29,7 +29,7 @@ namespace Exam1.Tests
         [Fact()]
         public void StringCompareTest()
         {
-            var myCompare = new MyCompareTo();
+            var myCompare = new MyCompareTo<string>();
 
             var actual = myCompare.Compare("aaaa", "aaaa");
 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Exam1
 {
-    public class MyCompareTo
+    public class MyCompareTo<T>
     {
         /// <summary>
         /// Compares the specified reference value.
@@ -62,5 +62,15 @@ namespace Exam1
         /// <param name="refObj">The reference object.</param>
         /// <param name="diffObj">The difference object.</param>
         /// <returns>result</returns>
+        
+        public bool Compar(T refObj, T diffObj)
+        {
+            if (refObj.GetType().IsValueType)
+            {
+                return EqualityComparer<T>.Default.Equals(refObj, diffObj);
+            }
+
+            return object.Equals(refObj, diffObj);
+        }
     }
 }
