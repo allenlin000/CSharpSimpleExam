@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
+using Newtonsoft.Json;
 
 namespace Exam1
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var json = "{\r\n\t\"StockQty\": 10,\r\n\t\"SafetyStockQty\": \"\",\r\n\t\"UpdatedUser\": \"David\"\r\n}";
 
@@ -13,9 +13,10 @@ namespace Exam1
 
             //// How to Fixed this exception?
             /*
-             * Newtonsoft.Json.JsonSerializationException: 
+             * Newtonsoft.Json.JsonSerializationException:
              * 'Error converting value {null} to type 'System.Int32'. Path 'SafetyStockQty', line 3, position 21.'
              */
+
             Console.WriteLine($"The default safety stock:{stock.SafetyStockQty}");
         }
     }
