@@ -7,52 +7,52 @@ namespace Exam1
     public class MyCompareTo<T>
     {
         /// <summary>
-        /// Compares the specified reference value.
-        /// </summary>
-        /// <param name="refValue">The reference value.</param>
-        /// <param name="diffValue">The difference value.</param>
-        /// <returns></returns>
-        public bool Compare(int refValue, int diffValue)
-        {
-            if (refValue.GetType().IsValueType)
-            {
-                return (refValue == diffValue);
-            }
+        ///// Compares the specified reference value.
+        ///// </summary>
+        ///// <param name="refValue">The reference value.</param>
+        ///// <param name="diffValue">The difference value.</param>
+        ///// <returns></returns>
+        //public bool Compare(int refValue, int diffValue)
+        //{
+        //    if (refValue.GetType().IsValueType)
+        //    {
+        //        return (refValue == diffValue);
+        //    }
 
-            return object.Equals(refValue, diffValue);
-        }
+        //    return object.Equals(refValue, diffValue);
+        //}
 
-        /// <summary>
-        /// Compares the specified reference value.
-        /// </summary>
-        /// <param name="refValue">The reference value.</param>
-        /// <param name="diffValue">The difference value.</param>
-        /// <returns></returns>
-        public bool Compare(double refValue, double diffValue)
-        {
-            if (refValue.GetType().IsValueType)
-            {
-                return (refValue == diffValue);
-            }
+        ///// <summary>
+        ///// Compares the specified reference value.
+        ///// </summary>
+        ///// <param name="refValue">The reference value.</param>
+        ///// <param name="diffValue">The difference value.</param>
+        ///// <returns></returns>
+        //public bool Compare(double refValue, double diffValue)
+        //{
+        //    if (refValue.GetType().IsValueType)
+        //    {
+        //        return (refValue == diffValue);
+        //    }
 
-            return object.Equals(refValue, diffValue);
-        }
+        //    return object.Equals(refValue, diffValue);
+        //}
 
-        /// <summary>
-        /// Compares the specified reference object.
-        /// </summary>
-        /// <param name="refObj">The reference object.</param>
-        /// <param name="diffObj">The difference object.</param>
-        /// <returns></returns>
-        public bool Compare(string refObj, string diffObj)
-        {
-            if (refObj.GetType().IsValueType)
-            {
-                return (refObj == diffObj);
-            }
+        ///// <summary>
+        ///// Compares the specified reference object.
+        ///// </summary>
+        ///// <param name="refObj">The reference object.</param>
+        ///// <param name="diffObj">The difference object.</param>
+        ///// <returns></returns>
+        //public bool Compare(string refObj, string diffObj)
+        //{
+        //    if (refObj.GetType().IsValueType)
+        //    {
+        //        return (refObj == diffObj);
+        //    }
 
-            return object.Equals(refObj, diffObj);
-        }
+        //    return object.Equals(refObj, diffObj);
+        //}
 
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace Exam1
         /// <param name="diffObj">The difference object.</param>
         /// <returns>result</returns>
         
-        public bool Compar(T refObj, T diffObj)
+        public bool Compare(T refObj, T diffObj)
         {
             if (refObj.GetType().IsValueType)
             {
